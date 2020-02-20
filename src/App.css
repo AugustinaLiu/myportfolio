@@ -2,37 +2,81 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav-Bar {
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 60%;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 0.7rem;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 3rem;
+  margin-top: -1.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Landing-Intro {
+  position: absolute;
+  width: 28rem;
+  left: 20%;
+  top: 6rem;
+}
+
+.Name {
+  font-size: 2.4rem;
+  color: black;
+  text-align: left;
+  left: 3rem;
+  line-height: 4rem;
+  font-family: 'Noto Serif', serif;
+  font-weight: 600;
+}
+
+.Intro {
+  font-size: 0.8rem;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+.Iselective {
+  width: 60%;
+  margin-left: -5rem;
+  margin-top: 24rem;
+  margin-bottom: 4rem;
+  filter: drop-shadow(0 0.75rem 0.75rem rgb(94, 94, 94, 0.5));
+}
+
+.Cozone {
+  width: 60%;
+  margin-left:5rem;
+  margin-bottom: 4rem;
+  filter: drop-shadow(0 0.75rem 0.75rem rgb(94, 94, 94, 0.5));
+}
+
+.Navindor {
+  width: 60%;
+  margin-left: -5em;
+  margin-bottom: 4rem;
+  filter: drop-shadow(0 0.75rem 0.75rem rgb(94, 94, 94, 0.5));
+}
+
+
+html { /* mobile */
+  font-size:16px;
+}
+@media only screen and (min-width: 600px){
+  html { /* tablet */
+      font-size:19px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-width: 768px){
+  html { /* desktop */
+      font-size:22px;
   }
 }
