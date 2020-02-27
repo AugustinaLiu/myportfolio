@@ -1,44 +1,62 @@
 import React, {Component} from 'react';
-import ResponsiveMenu from 'react-responsive-navbar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './Home';
+import Visual from './Visual';
+import About from './About';
+import UI from './UI';
+import Project1 from './Project1'
+import Project2 from './Project2'
+import Project3 from './Project3'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
+  return(
+    <Router>
       <header className="Nav-Bar">
-          <a>WORK</a>
-        <a>UI DESIGN</a>
-        <img className="logo"
-        alt="logo"
-        src="https://www.augustinaliu.com/wp-content/uploads/2020/01/logo-up.png" 
-      />
-        <a>VISUAL DESIGN</a>
-        <a>ABOUT</a>
+        <Link to="/">WORK</Link>
+        <Link to="/ui">UI DESIGN</Link>
+        <Link to='./'>
+          <img className="logo"
+            alt="logo"
+            src="https://www.augustinaliu.com/wp-content/uploads/2020/01/logo-up.png" 
+          />
+        </Link>
+        <Link to="/visual">VISUAL DESIGN</Link>
+        <Link to="/about">ABOUT</Link>
       </header>
-      <div className="Landing-Intro">
-        <p className="Name">
-        hello, <br/>
-        i'm augustina!
-        </p>
-        <p className="Intro"> 
-          a senior studying Human Centered Design and Engineering at the University of Washington.
-          I empower users with different levels of abilities by seeking and considering their needs and desires.
-        </p>
-      </div>
-      <img className="Iselective"
-        alt="project iSelective"
-        src="https://www.augustinaliu.com/wp-content/uploads/2020/01/Thumbnail-1.png" 
-      />
-      <img className="Cozone"
-        alt="project CoZone"
-        src="https://www.augustinaliu.com/wp-content/uploads/2020/01/Thumbnail-2-.png" 
-      />
-      <img className="Navindor"
-        alt="project Navindor"
-        src="https://www.augustinaliu.com/wp-content/uploads/2020/01/Thumbnail-3-.png" 
-      />
-    </div>
-  );
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/ui">
+          <UI />
+        </Route>
+        <Route path="/visual">
+          <Visual />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path='/iselective'>
+          <Project1 />
+        </Route>
+        <Route path='/cozone'>
+          <Project2 />
+        </Route>
+        <Route path='/navindor'>
+          <Project3 />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;

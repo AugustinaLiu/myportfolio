@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+  color: black;
+}
 .App {
   text-align: center;
 }
@@ -64,6 +68,47 @@
   margin-left: -5em;
   margin-bottom: 4rem;
   filter: drop-shadow(0 0.75rem 0.75rem rgb(94, 94, 94, 0.5));
+}
+
+.project:hover {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.greeting {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+  font-weight: 600;
+}
+
+.footer {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 0.7rem;
+  /* background-color: rgb(142, 196, 241); */
+  background-color: rgb(136, 227, 255);
+}
+
+.icon {
+  color:rgb(255, 187, 1);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  color: rgb(6, 142, 253);
+}
+
+.copynote {
+  font-size: 0.6rem;
+  margin-bottom: 4rem;
 }
 
 
