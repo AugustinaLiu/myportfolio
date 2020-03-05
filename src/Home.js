@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+
+import Footer from './components/Footer';
 import './App.css';
-import EmailIcon from '@material-ui/icons/Email';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function App() {
   return (
@@ -29,28 +29,13 @@ function App() {
           src="https://www.augustinaliu.com/wp-content/uploads/2020/01/Thumbnail-2-.png" 
         />
       </Link>
-      <Link to = "/cozone">
+      <Link to = "/navindor">
         <img className="Navindor project"
           alt="project Navindor"
           src="https://www.augustinaliu.com/wp-content/uploads/2020/01/Thumbnail-3-.png" 
         />
       </Link>
-      <div className="footer">
-        <p className="greeting">
-          Say Hi here!
-        </p>
-        <div >
-          <a href="mailto:liuao.uw@gmail.com">
-            <EmailIcon className="icon"/>
-          </a>
-          <a href="https://www.linkedin.com/in/augustinal">
-            <LinkedInIcon className="icon"/>
-          </a>
-        </div>
-        <div className="copynote">
-          <p>Designed & Code by Augustina Ao Liu in 2020. All rights reserved.</p>
-        </div>
-      </div>
+      <Footer />
     </div>
   )
 }

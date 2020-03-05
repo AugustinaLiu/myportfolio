@@ -7,7 +7,6 @@ a {
 }
 
 .Nav-Bar {
-  position: absolute;
   display: flex;
   justify-content: space-between;
   width: 60%;
@@ -17,6 +16,7 @@ a {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   font-size: 0.7rem;
+  position: sticky;
 }
 
 .logo {
@@ -111,10 +111,36 @@ a {
   margin-bottom: 4rem;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.topMargin {
+  margin-top: 4rem;
+}
+
+.half {
+  width: 40vw;
+  height: auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.boldSpan {
+  font-weight: bold;
+}
+
+.centerText {
+  text-align: center;
+}
 html { /* mobile */
   font-size:16px;
 }
+
 @media only screen and (min-width: 600px){
   html { /* tablet */
       font-size:19px;

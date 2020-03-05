@@ -1,0 +1,15 @@
+.designQuestion {
+    font-weight: bold;
+}
+
+.designQuestionBox {
+    border: solid 1px blue;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3rem;
+    padding: 1rem
+}
+.questionText {
+    color: blue;
+    font-style: italic;
+}
