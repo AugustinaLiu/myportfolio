@@ -51,7 +51,12 @@ function App() {
         <Route path='/navindor'>
           <Project3 />
         </Route>
-        <Route path="/">
+        {/* <Route 
+          exact 
+          path={`/myportfolio`} 
+          render={ (routerProps) => < Home routerProps={routerProps}/>} /> */}
+        {/* <Route path="/"> */}
+        <Route path={process.env.PUBLIC_URL + '/'}>
           <Home />
         </Route>
       </Switch>
