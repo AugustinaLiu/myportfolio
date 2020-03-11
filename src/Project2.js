@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import './css/project.css';
+import Footer from './components/Footer';
 
 export default function About() {
     return(
@@ -23,6 +24,8 @@ export default function About() {
                 "How might we create bring positive experiences of work from home employees and freelancers to work remotely in suburb?"
                 </p>
             </div>
+            <div className="space"/>
+            <Footer />
         </>
     )
 }

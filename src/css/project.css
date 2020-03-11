@@ -1,15 +1,71 @@
 .designQuestion {
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .designQuestionBox {
-    border: solid 1px blue;
+    border: solid 1px  #28a9ff;
     width: 50%;
     margin-left: 25%;
     margin-top: 3rem;
     padding: 1rem
 }
 .questionText {
-    color: blue;
+    color:  #28a9ff;
     font-style: italic;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.mainTitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+}
+
+.centerText {
+    font-family: 'Noto Serif', serif;
+}
+
+.boldSpan{
+    font-family: 'Roboto Slab', serif;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+.smallTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #28a9ff;
+    margin-top: 3rem;
+}
+
+.bigTitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+}
+
+.titleLeft {
+    margin-left: 4.2rem;
+}
+
+.space{
+    margin-bottom: 5rem;
+}
+
+html { /* mobile */
+    font-size:16px;
+  }
+  
+  @media only screen and (min-width: 600px){
+    html { /* tablet */
+        font-size:19px;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    html { /* desktop */
+        font-size:22px;
+    }
+  }

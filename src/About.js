@@ -17,9 +17,14 @@ export default function About() {
                     <p>Studying HCDE helped me got the answer: accessibility and inclusive design. Hence, I realized the importance of accessibility and inclusivity for a product. I'm dedicated to creating accessible and inclusive designs.</p>
                 </div>
             </div>
-            <Button>Resume</Button>
-            <p className="centerText">If you'd like to chat, feel free to email me or message me on Linkedin. </p>
-            <p  className="centerText">Eat watermelon🍉!</p>
+            <div className="centerButton">
+                <Button className="centerTextButton">
+                    <a href="https://drive.google.com/file/d/1VVGCQNA5j_H5n4gdiloaI3rRbBeMTojQ/view"
+                    className="buttonText">Resume</a>
+                </Button>
+            </div>
+            <p className="centerText1">If you'd like to chat, feel free to email me or message me on Linkedin. </p>
+            <p className="centerText1">Eat watermelon🍉!</p>
             <Footer />
         </>
     )

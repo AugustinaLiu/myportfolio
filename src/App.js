@@ -18,16 +18,16 @@ function App() {
   return(
     <Router>
       <header className="Nav-Bar">
-        <Link to="/">WORK</Link>
-        <Link to="/ui">UI DESIGN</Link>
+        <Link className="link" to="/">WORK</Link>
+        <Link className="link" to="/ui">UI DESIGN</Link>
         <Link to='./'>
           <img className="logo"
             alt="logo"
             src="https://www.augustinaliu.com/wp-content/uploads/2020/01/logo-up.png" 
           />
         </Link>
-        <Link to="/visual">VISUAL DESIGN</Link>
-        <Link to="/about">ABOUT</Link>
+        <Link className="link" to="/visual">VISUAL DESIGN</Link>
+        <Link className="link" to="/about">ABOUT</Link>
       </header>
       <Switch>
         <Route path="/home">

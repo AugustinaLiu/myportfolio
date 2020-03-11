@@ -19,6 +19,10 @@ a {
   position: sticky;
 }
 
+.link:hover {
+  color: #28a9ff;
+}
+
 .logo {
   width: 3rem;
   margin-top: -1.25rem;
@@ -37,7 +41,7 @@ a {
   text-align: left;
   left: 3rem;
   line-height: 4rem;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Gelasio', serif;
   font-weight: 600;
 }
 
@@ -123,6 +127,8 @@ a {
 .half {
   width: 40vw;
   height: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
 }
 
 .title {
@@ -134,9 +140,43 @@ a {
   font-weight: bold;
 }
 
-.centerText {
-  text-align: center;
+.centerButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
+.buttonText:hover {
+  color:white;
+  background-color: #28a9ff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 2rem;
+}
+
+.buttonText {
+  color: #28a9ff;
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 2rem;
+  border: solid 0.5px  #28a9ff;
+}
+
+
+.centerText1 {
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+  font-size: 0.8rem;
+}
+
+
+
 html { /* mobile */
   font-size:16px;
 }

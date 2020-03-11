@@ -1,0 +1,63 @@
+.title{
+  margin-left: 5rem;
+  margin-top: 5rem;
+  font-family: 'Noto Serif', serif;
+  margin-bottom: 3rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.width1 {
+  width: 17rem;
+}
+
+.width2 {
+  width:20rem;
+}
+
+.width3{
+  width:30rem;
+}
+
+.width4{
+  width:25rem;
+}
+
+.box {
+ text-align: center;
+}
+
+.marginLeft {
+  margin-left: 5rem;
+}
+
+.marginRight{
+  margin-right:5rem;
+}
+
+.space{
+  margin-bottom: 2rem;
+}
+
+html { /* mobile */
+    font-size:16px;
+  }
+  
+  @media only screen and (min-width: 600px){
+    html { /* tablet */
+        font-size:19px;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    html { /* desktop */
+        font-size:22px;
+    }
+  }

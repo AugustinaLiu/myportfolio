@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import './css/project.css';
+import Footer from './components/Footer';
 
 export default function About() {
     return(
@@ -22,7 +23,9 @@ export default function About() {
                 <p className="questionText">
                 "How might we create an experience for both Chinese users and U.S. users to shop online by mobile phones efficiently?"
                 </p>
+                <div className="space"/>
             </div>
+            <Footer/>
         </>
     )
 }
