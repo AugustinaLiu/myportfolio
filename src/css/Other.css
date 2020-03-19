@@ -5,14 +5,17 @@
   margin-bottom: 3rem;
 }
 
-.row {
+.container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .img{
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .width1 {
@@ -47,17 +50,11 @@
   margin-bottom: 2rem;
 }
 
-html { /* mobile */
+@media all and (max-width: 600px){
+  .half {
+    width: 80vw;
+  }
+  html { /* mobile */
     font-size:16px;
   }
-  
-  @media only screen and (min-width: 600px){
-    html { /* tablet */
-        font-size:19px;
-    }
-  }
-  @media only screen and (min-width: 768px){
-    html { /* desktop */
-        font-size:22px;
-    }
-  }
+}

@@ -29,20 +29,70 @@ a {
 }
 
 .Landing-Intro {
-  position: absolute;
+  /* position: absolute;
   width: 28rem;
   left: 20%;
-  top: 6rem;
+  top: 6rem; */
+  width: 70%;
+  margin-left: 15%;
 }
 
-.Name {
+.name {
   font-size: 2.4rem;
   color: black;
   text-align: left;
-  left: 3rem;
   line-height: 4rem;
   font-family: 'Gelasio', serif;
   font-weight: 600;
+  white-space: nowrap;
+  margin-bottom: 0px;
+}
+
+.slider-wrapper {
+  font-size: 40px;
+  color:#aaa;
+  font-weight: bold;
+}
+
+.slider {
+  height: 50px;
+  overflow: hidden;
+}
+
+.slider p {
+  height: 50px;
+  margin-bottom: 50px;
+  padding-left: 2px;
+  box-sizing: border-box;
+  font-size: 2rem;
+  color: black;
+  background:rgb(136, 227, 255);
+  text-align: left;
+  font-family: 'Gelasio', serif;
+  font-weight: 600;
+  white-space: nowrap;
+  /* clear:both;
+   float:left; */
+   max-width: 360px;
+}
+.slider-text1 {
+  animation: slide 5s linear infinite;
+}
+
+.slider-text2 {
+}
+
+.slider-text3 {
+}
+
+@keyframes slide {
+  0% {margin-top: -300px;}
+  5% {margin-top: -200px;}
+  33% {margin-top: -200px;}
+  38% {margin-top: -100px;}
+  66% {margin-top: -100px;}
+  71% {margin-top: 0px;}
+  100% {margin-top: 0px;}
 }
 
 .Intro {
@@ -50,12 +100,13 @@ a {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
+  max-width: 600px
 }
 
 .Iselective {
   width: 60%;
   margin-left: -5rem;
-  margin-top: 24rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
   filter: drop-shadow(0 0.75rem 0.75rem rgb(94, 94, 94, 0.5));
 }
@@ -69,7 +120,7 @@ a {
 
 .Navindor {
   width: 60%;
-  margin-left: -5em;
+  margin-left: -5rem;
   margin-bottom: 4rem;
   filter: drop-shadow(0 0.75rem 0.75rem rgb(94, 94, 94, 0.5));
 }
@@ -77,6 +128,7 @@ a {
 .project:hover {
   transform: scale(1.1);
   opacity: 0.6;
+  transition: 0.5s;
 }
 
 .greeting {
@@ -117,6 +169,7 @@ a {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -129,6 +182,9 @@ a {
   height: auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8rem;
+  @media only screen and (max-width: 599px){
+    width: 80vw;
+  }
 }
 
 .title {
@@ -175,19 +231,11 @@ a {
   font-size: 0.8rem;
 }
 
-
-
-html { /* mobile */
-  font-size:16px;
-}
-
-@media only screen and (min-width: 600px){
-  html { /* tablet */
-      font-size:19px;
+@media all and (max-width: 600px){
+  .half {
+    width: 80vw;
   }
-}
-@media only screen and (min-width: 768px){
-  html { /* desktop */
-      font-size:22px;
+  html { /* mobile */
+    font-size:16px;
   }
 }

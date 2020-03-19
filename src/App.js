@@ -12,6 +12,8 @@ import UI from './UI';
 import Project1 from './Project1'
 import Project2 from './Project2'
 import Project3 from './Project3'
+// import Grow from './components/Grow';
+import { AnimatedSwitch } from 'react-router-transition';
 import './App.css';
 
 function App() {
@@ -29,12 +31,20 @@ function App() {
         <Link className="link" to="/visual">VISUAL DESIGN</Link>
         <Link className="link" to="/about">ABOUT</Link>
       </header>
-      <Switch>
+      {/* <Switch> */}
+      <AnimatedSwitch
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
+        className="switch-wrapper"
+      >
         <Route path="/home">
           <Home />
         </Route>
         <Route path="/ui">
-          <UI />
+          {/* <Fade in={true} timeout={5000}> */}
+            <UI />
+          {/* </Fade> */}
         </Route>
         <Route path="/visual">
           <Visual />
@@ -54,7 +64,8 @@ function App() {
         <Route path="/">
           <Home />
         </Route>
-      </Switch>
+      </AnimatedSwitch>
+      {/* </Switch> */}
     </Router>
   )
 }

@@ -7,7 +7,7 @@ export default function About() {
     return(
         <>
             <div className="flex topMargin">
-                <img src={'about.jpg'} className="half"/>
+                <img src="https://www.augustinaliu.com/wp-content/uploads/2018/10/IMG_3336-%E5%89%AF%E6%9C%AC.jpg" className="half"/>
                 <div  className="half">
                     <p>Hi! My name is Augustina Ao Liu, a product and UX Designer based in Seattle, WA. I am a senior at the University of Washington, Seattle, majoring in Human-Centered Design & Engineering (HCI track). I also have rich experience in accessibility and inclusive design.</p>
                     <p>To me, design shouldn't be a way to make people limited but to empower people and make everyone achieve more. I hope to design inclusive products with great accessibility that the general public could use, so people with all different abilities could use the designs without any limit.</p>
